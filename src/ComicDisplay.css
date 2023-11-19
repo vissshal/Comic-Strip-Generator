@@ -1,0 +1,83 @@
+.container1 {
+  display: flex;
+  flex-direction: column;
+  /* grid-template-columns: repeat(auto-fill, minmax(45%, 1fr)); */
+  padding: 10px 20px;
+  gap: 12px;
+  background-color: inherit;
+  color: white;
+  margin: 30px 50px;
+}
+
+.panel1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  border: 2px solid #7b7a7a;
+}
+.close-button {
+  position: fixed;
+  top: 5px;
+  right: 45%;
+  z-index: 999;
+  padding: 6px 20px;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #33b249;
+  border-radius: 8px;
+  border: 1px solid white;
+  transition: transform 0.2s, background-color 0.2s;
+}
+.close-button:hover {
+  background-color: #f45c04;
+  transform: scale(1.2);
+}
+img {
+  width: 80%;
+  height: auto;
+}
+
+.bubble {
+  position: absolute;
+  top: 0px;
+  right: 18%;
+  text-align: center;
+  color: #333;
+  height: 0;
+  box-sizing: content-box;
+  line-height: 1;
+  transform: translatey(40px);
+}
+.speech {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/speech-bubble.svg);
+  width: 20%;
+  max-width: 80%;
+  padding-top: 6%;
+  text-align: center;
+  word-wrap: break-word;
+  padding-bottom: 20%;
+}
+
+.panel1:hover {
+  box-shadow: 0 0 10px rgb(8, 0, 255);
+}
+.dark-theme .panel1:hover {
+  box-shadow: 0 0 10px yellow;
+}
+
+.bubble-box {
+  display: inline-block;
+  background-color: #e6e6e6;
+  border-radius: 20px;
+  padding: 10px 20px;
+  max-width: 80%;
+  word-wrap: break-word;
+  margin-bottom: 10px;
+}
